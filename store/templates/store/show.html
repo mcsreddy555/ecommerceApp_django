@@ -1,0 +1,70 @@
+{% extends 'store/main.html' %}
+{% load static %}
+{% block content %}
+     <div class="row">
+		
+		<div class="col-lg-6">
+			<div class="box-element" id="form-wrapper">
+				<a  class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Back</a>
+				<form id="form">
+					
+					<div class="cart-row">
+						<img class="thumbnail" src="{% static 'images/laptop.png' %}">
+						
+					</div>
+					
+					<div class="cart-row">
+					<div style="flex:2"><p><strong> HP Laptop</strong></p></div>
+					<div style="flex:1"><p><strong><i class="fa fa-inr" style="font-size:15px"></i> 48999.00</strong></p></div>
+					</div>
+
+					<hr>
+					
+				</form>
+			</div>
+
+
+		</div>
+
+		<div class="col-lg-6">
+
+			<div class="box-element">
+
+				<hr>
+				<h3>Product Details</h3>
+				<hr>
+				<div class="cart-row">
+					<div style="flex:1"><p>Product Name </p></div>
+					<div style="flex:1"><p>:     HP Laptop</p></div>
+				</div>
+				<div class="cart-row">
+					<div style="flex:1"><p>Model</p></div>
+					<div style="flex:1"><p>:        15s-DU1034TU</p></div>
+				</div>
+				<div class="cart-row">
+					<div style="flex:1"><p>Package</p></div>
+					<div style="flex:1"><p>:        Laptop, Power Adaptor, User Guide, Warranty Documents</p></div>
+				</div>
+				<div class="cart-row">
+					<div style="flex:1"><p>Details</p></div>
+					<div style="flex:1"><p>:        HP 15s Core i5 10th Gen - (8 GB/1 TB HDD/Windows 10 Home) 15s-DU1034TU Thin and Light Laptop  (15.6 inch, Natural Silver, 1.78 kg, With MS Office)</p></div>
+				</div>
+				<div class="cart-row">
+					<div style="flex:1"><p>Warranty</p></div>
+					<div style="flex:1"><p>:        1 Year Onsite Warranty</p></div>
+				</div>
+				
+				
+			</div>
+
+			<div>
+				<a href="{% url 'cart' %}">
+					<input type="button"  class="btn btn-outline-success "  style="float: right;" value="Go To Cart">
+				</a>
+				 
+			</div>
+
+		</div>
+		
+	</div>
+{% endblock content %}
